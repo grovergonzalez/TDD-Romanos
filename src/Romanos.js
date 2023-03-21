@@ -37,6 +37,10 @@ function ToRomano(num)
     {
         return "XL";
     }
+    if(num==50)
+    {
+        return "L";
+    }
 }
 
 export default ToRomano;
