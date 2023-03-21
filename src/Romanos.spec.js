@@ -47,3 +47,9 @@ describe("Romanos", () => {
       expect(ToRomano(90)).toEqual("XC");
     });
 });
+
+describe("Romanos", () => {
+    it("deberia mostrar el numero 100 en Romanos", () => {
+      expect(ToRomano(100)).toEqual("C");
+    });
+});
