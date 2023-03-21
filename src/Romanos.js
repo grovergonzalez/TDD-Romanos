@@ -13,42 +13,15 @@ function ToRomano(num)
       };
     
     let resultado = '';
-    if(num==1)
+    for (let letra in romanos) 
     {
-        return "I";
+        while (num >= romanos[letra]) 
+        {
+          resultado += letra;
+          num -= romanos[letra];
+        }
     }
-    if(num==4)
-    {
-        return "IV";
-    }
-    if(num==5)
-    {
-        return "V";
-    }
-    if(num==9)
-    {
-        return "IX";
-    }
-    if(num==10)
-    {
-        return "X";
-    }
-    if(num==40)
-    {
-        return "XL";
-    }
-    if(num==50)
-    {
-        return "L";
-    }
-    if(num==90)
-    {
-        return "XC";
-    }
-    if(num==100)
-    {
-        return "C";
-    }
+    return resultado;
 }
 
 export default ToRomano;
