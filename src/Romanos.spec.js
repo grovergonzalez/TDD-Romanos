@@ -31,7 +31,7 @@ describe("Romanos", () => {
 });
 
 describe("Romanos", () => {
-    it("deberia mostrar el numero 40 en Romano", () => {
+    it("deberia mostrar el numero 40 en Romanos", () => {
       expect(ToRomano(40)).toEqual("XL");
     });
 });
