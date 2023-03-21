@@ -41,6 +41,10 @@ function ToRomano(num)
     {
         return "L";
     }
+    if(num==90)
+    {
+        return "XC";
+    }
 }
 
 export default ToRomano;
