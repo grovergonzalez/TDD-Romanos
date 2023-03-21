@@ -29,6 +29,10 @@ function ToRomano(num)
     {
         return "IX";
     }
+    if(num==10)
+    {
+        return "X";
+    }
 }
 
 export default ToRomano;

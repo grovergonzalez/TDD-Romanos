@@ -23,3 +23,9 @@ describe("Romanos", () => {
       expect(ToRomano(9)).toEqual("IX");
     });
 });
+
+describe("Romanos", () => {
+    it("deberia mostrar el numero 10 en Romano", () => {
+      expect(ToRomano(10)).toEqual("X");
+    });
+});
