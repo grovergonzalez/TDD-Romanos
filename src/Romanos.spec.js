@@ -17,3 +17,9 @@ describe("Romanos", () => {
       expect(ToRomano(5)).toEqual("V");
     });
 });
+
+describe("Romanos", () => {
+    it("deberia mostrar el numero 9 en Romano", () => {
+      expect(ToRomano(9)).toEqual("IX");
+    });
+});
